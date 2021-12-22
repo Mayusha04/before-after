@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").before(" <b>welcome to CGCS</b>.");
+  });
+
+  $("#two").click(function(){
+    $("ol").after("<li>Jquery after element</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>It's a bootcamp</p>
+<p>inserting content before and after elements.</p>
+
+<ol>
+  <li>html</li>
+  <li>css</li>
+  <li>javascript</li>
+</ol>
+
+<button id="one">Before</button>
+<button id="two">after</button>
+
+</body>
+</html>
